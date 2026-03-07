@@ -33,21 +33,133 @@
           <a href="#contact">Контакты</a>
         </nav>
 
-        <button
-          class="theme-toggle"
-          type="button"
-          aria-label="Переключить тему"
-          aria-pressed="true"
-        >
-          <span class="toggle-track" aria-hidden="true">
-            <span class="toggle-thumb"></span>
-          </span>
-          <span class="toggle-labels" aria-hidden="true">
-            <span class="toggle-light">Светлая</span>
-            <span class="toggle-dark">Тёмная</span>
-          </span>
-        </button>
+        <div class="header-controls">
+          <button
+            class="theme-toggle theme-toggle-desktop"
+            type="button"
+            aria-label="Переключить на светлую тему"
+            aria-pressed="true"
+          >
+            <span class="toggle-track" aria-hidden="true">
+              <span class="toggle-thumb"></span>
+            </span>
+            <span class="theme-icon" aria-hidden="true">
+              <svg
+                class="icon icon-sun"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2.5V5" />
+                <path d="M12 19V21.5" />
+                <path d="M5.28 5.28L7.05 7.05" />
+                <path d="M16.95 16.95L18.72 18.72" />
+                <path d="M2.5 12H5" />
+                <path d="M19 12H21.5" />
+                <path d="M5.28 18.72L7.05 16.95" />
+                <path d="M16.95 7.05L18.72 5.28" />
+              </svg>
+              <svg
+                class="icon icon-moon"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 14.5C18.1 15 17.06 15.29 15.96 15.29C12.55 15.29 9.79 12.53 9.79 9.12C9.79 8.02 10.08 6.98 10.58 6.08C7.2 6.72 4.64 9.69 4.64 13.26C4.64 17.3 7.92 20.58 11.96 20.58C15.53 20.58 18.5 18.02 19.14 14.64L19 14.5Z"
+                />
+              </svg>
+            </span>
+          </button>
+
+          <div class="mobile-nav-shell">
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <span class="menu-toggle-box" aria-hidden="true">
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+              </span>
+            </button>
+          </div>
+        </div>
       </header>
+
+      <div class="mobile-menu-layer" id="mobile-menu" aria-hidden="true" inert>
+        <button
+          class="mobile-menu-overlay"
+          type="button"
+          aria-label="Закрыть меню"
+          tabindex="-1"
+        ></button>
+
+        <div class="mobile-menu-panel">
+          <div class="mobile-menu-toolbar">
+            <button class="menu-close" type="button" aria-label="Закрыть меню">
+              <span class="menu-toggle-box" aria-hidden="true">
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+              </span>
+            </button>
+          </div>
+
+          <nav class="mobile-nav" aria-label="Мобильная навигация">
+            <a href="#services">Услуги</a>
+            <a href="#materials">Материалы</a>
+            <a href="#projects">Проекты</a>
+            <a href="#process">Процесс</a>
+            <a href="#contact">Контакты</a>
+          </nav>
+
+          <div class="mobile-menu-theme">
+            <button
+              class="theme-toggle theme-toggle-mobile"
+              type="button"
+              aria-label="Переключить на светлую тему"
+              aria-pressed="true"
+            >
+              <span class="toggle-track" aria-hidden="true">
+                <span class="toggle-thumb"></span>
+              </span>
+              <span class="theme-icon" aria-hidden="true">
+                <svg
+                  class="icon icon-sun"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2.5V5" />
+                  <path d="M12 19V21.5" />
+                  <path d="M5.28 5.28L7.05 7.05" />
+                  <path d="M16.95 16.95L18.72 18.72" />
+                  <path d="M2.5 12H5" />
+                  <path d="M19 12H21.5" />
+                  <path d="M5.28 18.72L7.05 16.95" />
+                  <path d="M16.95 7.05L18.72 5.28" />
+                </svg>
+                <svg
+                  class="icon icon-moon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 14.5C18.1 15 17.06 15.29 15.96 15.29C12.55 15.29 9.79 12.53 9.79 9.12C9.79 8.02 10.08 6.98 10.58 6.08C7.2 6.72 4.64 9.69 4.64 13.26C4.64 17.3 7.92 20.58 11.96 20.58C15.53 20.58 18.5 18.02 19.14 14.64L19 14.5Z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
 
       <main id="top">
         <section class="hero section" data-reveal>
