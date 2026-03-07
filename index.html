@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORGELAYER — Лаборатория 3D печати</title>
+    <meta
+      name="description"
+      content="FORGELAYER — высокотехнологичная студия 3D печати: от прототипа до готовой детали."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Fraunces:opsz,wght,SOFT@9..144,500,100&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="FORGELAYER">
+          <span class="brand-mark">FORGELAYER</span>
+          <span class="brand-copy">Лаборатория 3D печати</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <a href="#services">Услуги</a>
+          <a href="#materials">Материалы</a>
+          <a href="#projects">Проекты</a>
+          <a href="#process">Процесс</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Переключить тему"
+          aria-pressed="true"
+        >
+          <span class="toggle-track" aria-hidden="true">
+            <span class="toggle-thumb"></span>
+          </span>
+          <span class="toggle-labels" aria-hidden="true">
+            <span class="toggle-light">Светлая</span>
+            <span class="toggle-dark">Тёмная</span>
+          </span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="hero section" data-reveal>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div class="section-label">ЛАБОРАТОРИЯ 3D ПЕЧАТИ</div>
+              <div class="status-badge">ФЕРМА ПРИНТЕРОВ АКТИВНА</div>
+
+              <h1>
+                МЫ СОЗДАЕМ
+                <span>ИДЕИ</span>
+                ПО СЛОЯМ
+              </h1>
+
+              <p class="hero-subtitle">От прототипа до готовой детали</p>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="#contact">Начать печать</a>
+                <a class="button button-secondary" href="#projects">Смотреть проекты</a>
+              </div>
+
+              <ul class="hero-stats" aria-label="Производственные показатели">
+                <li>
+                  <span>Старт работы</span>
+                  <strong>от 24 часов</strong>
+                </li>
+                <li>
+                  <span>Форматы</span>
+                  <strong>STL / STEP / OBJ</strong>
+                </li>
+                <li>
+                  <span>Фокус</span>
+                  <strong>Прототипы и серия</strong>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+              <div class="visual-frame">
+                <div class="frame-grid"></div>
+                <div class="printer-stage">
+                  <div class="gantry-rail"></div>
+                  <div class="gantry-column gantry-column-left"></div>
+                  <div class="gantry-column gantry-column-right"></div>
+                  <div class="print-head">
+                    <div class="print-head-core"></div>
+                    <div class="print-beam"></div>
+                  </div>
+                  <div class="build-platform"></div>
+                  <div class="printed-object">
+                    <span class="object-layer layer-1"></span>
+                    <span class="object-layer layer-2"></span>
+                    <span class="object-layer layer-3"></span>
+                    <span class="object-layer layer-4"></span>
+                    <span class="object-layer layer-5"></span>
+                    <span class="object-layer layer-6"></span>
+                    <span class="object-layer layer-7"></span>
+                  </div>
+                  <div class="scan-ring scan-ring-one"></div>
+                  <div class="scan-ring scan-ring-two"></div>
+                </div>
+
+                <div class="visual-tag visual-tag-top">
+                  ПРОТОТИПЫ · ИНЖЕНЕРНЫЕ ДЕТАЛИ · КАСТОМНЫЕ ИЗДЕЛИЯ
+                </div>
+                <div class="visual-tag visual-tag-bottom">
+                  ТОЧНОСТЬ СЛОЯ · КОНТРОЛЬ ГЕОМЕТРИИ · ПОВТОРЯЕМОСТЬ СЕРИИ
+                </div>
+              </div>
+
+              <div class="hero-data">
+                <article>
+                  <span>Материалы</span>
+                  <strong>PLA / PETG / ABS</strong>
+                </article>
+                <article>
+                  <span>Режим</span>
+                  <strong>Печать 24/7</strong>
+                </article>
+                <article>
+                  <span>Контроль</span>
+                  <strong>Проверка каждого слоя</strong>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="ticker" aria-label="Ключевые направления">
+          <div class="ticker-track">
+            <span>3D ПЕЧАТЬ ✦ ПРОТОТИПИРОВАНИЕ ✦ ИНЖЕНЕРНЫЕ ДЕТАЛИ ✦ КАСТОМНЫЕ ИЗДЕЛИЯ ✦ FORGELAYER</span>
+            <span aria-hidden="true">3D ПЕЧАТЬ ✦ ПРОТОТИПИРОВАНИЕ ✦ ИНЖЕНЕРНЫЕ ДЕТАЛИ ✦ КАСТОМНЫЕ ИЗДЕЛИЯ ✦ FORGELAYER</span>
+          </div>
+        </section>
+
+        <section class="services section" id="services" data-reveal>
+          <div class="section-heading">
+            <div>
+              <div class="section-label">УСЛУГИ</div>
+              <h2>Производственный контур для задач любой сложности</h2>
+            </div>
+            <p>
+              Мы работаем на стыке инженерии и быстрого прототипирования: от
+              одной тестовой детали до стабильного мелкосерийного выпуска.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="services-lead">
+              <p class="eyebrow">ФИЛОСОФИЯ</p>
+              <blockquote>
+                Идея становится реальностью, когда первый слой касается стола
+                принтера.
+              </blockquote>
+              <p class="services-note">
+                Каждая модель проходит проверку геометрии, подбор материала и
+                настройку печатного профиля до запуска в производство.
+              </p>
+            </article>
+
+            <div class="services-list" role="list" aria-label="Основные направления">
+              <article class="service-card" role="listitem">
+                <span>01</span>
+                <h3>Прототипирование</h3>
+                <p>Быстрые итерации для проверки формы, посадок и механики.</p>
+              </article>
+              <article class="service-card" role="listitem">
+                <span>02</span>
+                <h3>Разработка изделий</h3>
+                <p>Производственный маршрут от цифровой модели до готовой детали.</p>
+              </article>
+              <article class="service-card" role="listitem">
+                <span>03</span>
+                <h3>Кастомные детали</h3>
+                <p>Единичные изделия под точную задачу, посадку и нагрузку.</p>
+              </article>
+              <article class="service-card" role="listitem">
+                <span>04</span>
+                <h3>Инженерные модели</h3>
+                <p>Функциональные компоненты для тестов, сборок и стендов.</p>
+              </article>
+              <article class="service-card" role="listitem">
+                <span>05</span>
+                <h3>Мелкосерийное производство</h3>
+                <p>Повторяемость деталей на ферме принтеров и контроль партии.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects section" id="projects" data-reveal>
+          <div class="section-heading">
+            <div>
+              <div class="section-label">ПРОЕКТЫ</div>
+              <h2>Прототипы, собранные под реальную задачу</h2>
+            </div>
+            <p>
+              Асимметричная сетка показывает типовые сценарии: функциональная
+              оснастка, презентационные модели и корпусные решения.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card project-card-large">
+              <span class="project-index">ПРОЕКТ 01</span>
+              <h3>Крепление для дрона</h3>
+              <p>
+                Легкая силовая деталь для испытаний на вибронагрузку и быстрой
+                замены геометрии.
+              </p>
+              <div class="project-meta">
+                <span>PETG</span>
+                <span>2025</span>
+              </div>
+            </article>
+
+            <article class="project-card project-card-tall">
+              <span class="project-index">ПРОЕКТ 02</span>
+              <h3>Архитектурная модель</h3>
+              <p>
+                Детализированный макет с чистой поверхностью и точной сборкой
+                модулей.
+              </p>
+              <div class="project-meta">
+                <span>PLA</span>
+                <span>2025</span>
+              </div>
+            </article>
+
+            <article class="project-card project-card-wide">
+              <span class="project-index">ПРОЕКТ 03</span>
+              <h3>Механическая шестерня</h3>
+              <p>
+                Функциональный прототип для проверки кинематики, посадок и
+                ресурса в узле.
+              </p>
+              <div class="project-meta">
+                <span>NYLON</span>
+                <span>2025</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <span class="project-index">ПРОЕКТ 04</span>
+              <h3>Прототип корпуса устройства</h3>
+              <p>
+                Корпус под электронику с контрольной сборкой и быстрыми
+                изменениями интерфейсных зон.
+              </p>
+              <div class="project-meta">
+                <span>ABS</span>
+                <span>2025</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="process section" id="process" data-reveal>
+          <div class="section-heading">
+            <div>
+              <div class="section-label">ПРОЦЕСС</div>
+              <h2>Четкий маршрут от файла до готовой детали</h2>
+            </div>
+            <p>
+              Каждый этап закрывает конкретный риск: геометрия, материал,
+              настройка, производство и подготовка к передаче.
+            </p>
+          </div>
+
+          <div class="process-list">
+            <article class="process-card">
+              <span class="process-number">01</span>
+              <h3>ЗАГРУЗКА</h3>
+              <p>Клиент загружает 3D модель или описывает задачу.</p>
+            </article>
+            <article class="process-card">
+              <span class="process-number">02</span>
+              <h3>ОПТИМИЗАЦИЯ</h3>
+              <p>
+                Мы анализируем модель, выбираем материал и параметры печати.
+              </p>
+            </article>
+            <article class="process-card">
+              <span class="process-number">03</span>
+              <h3>ПЕЧАТЬ</h3>
+              <p>Деталь производится на ферме 3D принтеров.</p>
+            </article>
+            <article class="process-card">
+              <span class="process-number">04</span>
+              <h3>ФИНИШ</h3>
+              <p>
+                Удаление поддержек, обработка и подготовка к передаче клиенту.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="materials section" id="materials" data-reveal>
+          <div class="section-heading">
+            <div>
+              <div class="section-label">МАТЕРИАЛЫ</div>
+              <h2>БИБЛИОТЕКА МАТЕРИАЛОВ</h2>
+            </div>
+            <p>
+              Подбираем полимер не по шаблону, а под механику, температуру,
+              внешний вид и постобработку изделия.
+            </p>
+          </div>
+
+          <div class="materials-grid">
+            <article class="material-card">
+              <h3>PLA</h3>
+              <p>Для быстрых макетов, визуальных прототипов и презентационных деталей.</p>
+            </article>
+            <article class="material-card">
+              <h3>PETG</h3>
+              <p>Универсальный материал для функциональных деталей и внешних корпусов.</p>
+            </article>
+            <article class="material-card">
+              <h3>ABS</h3>
+              <p>Жесткость, термостойкость и возможность дальнейшей механической обработки.</p>
+            </article>
+            <article class="material-card">
+              <h3>TPU</h3>
+              <p>Гибкие элементы, демпферы, накладки и эластичные соединения.</p>
+            </article>
+            <article class="material-card">
+              <h3>RESIN</h3>
+              <p>Высокая детализация для точных мастер-моделей и демонстрационных образцов.</p>
+            </article>
+            <article class="material-card">
+              <h3>NYLON</h3>
+              <p>Износостойкие детали с хорошей ударной вязкостью и рабочей прочностью.</p>
+            </article>
+            <article class="material-card material-card-accent">
+              <h3>CARBON</h3>
+              <p>Композиты для легких и жестких деталей с высокой размерной стабильностью.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="contact section" id="contact" data-reveal>
+          <div class="contact-grid">
+            <div class="contact-copy">
+              <div class="section-label">КОНТАКТ</div>
+              <h2>Начать печать</h2>
+              <p>
+                Отправьте модель или короткое описание задачи. Мы вернемся с
+                оценкой по срокам, материалу и технологии изготовления.
+              </p>
+
+              <div class="contact-points">
+                <article>
+                  <span>Ответ</span>
+                  <strong>В течение рабочего дня</strong>
+                </article>
+                <article>
+                  <span>Форматы</span>
+                  <strong>STL, STEP, OBJ, 3MF</strong>
+                </article>
+                <article>
+                  <span>Режим</span>
+                  <strong>Прототипы, оснастка, серия</strong>
+                </article>
+              </div>
+            </div>
+
+            <form class="contact-form">
+              <label>
+                <span>Имя</span>
+                <input type="text" name="name" placeholder="Как к вам обращаться" />
+              </label>
+
+              <label>
+                <span>Эл. почта</span>
+                <input type="email" name="email" placeholder="name@company.ru" />
+              </label>
+
+              <label>
+                <span>Описание проекта</span>
+                <textarea
+                  name="brief"
+                  rows="5"
+                  placeholder="Опишите задачу, габариты, срок и требования к детали"
+                ></textarea>
+              </label>
+
+              <label class="file-field">
+                <span>Загрузить файл</span>
+                <input
+                  id="project-file"
+                  type="file"
+                  name="file"
+                  accept=".stl,.step,.stp,.obj,.3mf,.zip"
+                />
+                <span class="file-field-button">Выбрать файл</span>
+                <small class="file-field-name">Файл не выбран</small>
+              </label>
+
+              <button class="button button-primary button-submit" type="submit">
+                ОТПРАВИТЬ МОДЕЛЬ
+              </button>
+              <p class="form-note">
+                Принимаем готовые модели и заявки без файла, если нужна помощь с
+                подготовкой геометрии.
+              </p>
+              <p class="form-feedback" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-columns">
+          <div>
+            <span class="footer-title">FORGELAYER</span>
+            <p>Студия цифрового производства</p>
+          </div>
+          <div>
+            <span class="footer-title">Навигация</span>
+            <ul class="footer-links">
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#projects">Проекты</a></li>
+              <li><a href="#materials">Материалы</a></li>
+              <li><a href="#process">Процесс</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+          </div>
+          <div>
+            <span class="footer-title">Статус</span>
+            <p>ФЕРМА ПРИНТЕРОВ АКТИВНА</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>Цифровое производство для прототипов, инженерных деталей и серийных задач.</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
